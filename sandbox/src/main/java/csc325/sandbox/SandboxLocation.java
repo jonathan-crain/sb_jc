@@ -87,6 +87,9 @@ public class SandboxLocation {
                               .queryString("format", format)
                               .asObject(GeocodingResult.class)
                               .getBody();
+        
+        //System.out.println(str);
+
     }
     
     public void censusGeocodeZipToObject_v2(){

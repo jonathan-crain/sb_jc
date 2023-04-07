@@ -54,30 +54,30 @@ public class Sandbox {
         }
         */ 
         
-        /*
-        farmingdale.censusGeocodeFullAddressToObject();
-        if (farmingdale.getGeoResult() != null){
-            int numAddressMatches = farmingdale.getGeoResult().getAddressMatches().size();
+      
+        farmingdale.censusGeocodeZipToObject     ();
+           if (farmingdale.getGeoResult() != null){
+            int numAddressMatches = farmingdale.getGeoResult().getResult().getAddressMatches().size();
             System.out.printf("%d addresses matched\n", numAddressMatches);
 
-            List<AddressMatch> addressMatches = farmingdale.getGeoResult().getAddressMatches();
+            List<AddressMatch> addressMatches = farmingdale.getGeoResult().getResult().getAddressMatches();
             for (AddressMatch m : addressMatches){
                 System.out.printf("city: %s x-coord: %f y-coord: %f\n", m.getAddressComponents().getCity(), m.getCoordinates().getX(), m.getCoordinates().getY());
             }
             
         }
-        */
         
-        farmingdale.censusGeocodeZipToObject_v2();
-        if (farmingdale.getGeoResult() != null){
-            int numAddressMatches = farmingdale.getGeoResult().getAddressMatches().size();
-            System.out.printf("%d addresses matched\n", numAddressMatches);
-
-            List<AddressMatch> addressMatches = farmingdale.getGeoResult().getAddressMatches();
-            for (AddressMatch m : addressMatches){
-                System.out.printf("city: %s x-coord: %f y-coord: %f\n", m.getAddressComponents().getCity(), m.getCoordinates().getX(), m.getCoordinates().getY());
-            }
-            
-        }
+        
+//        farmingdale.censusGeocodeZipToObject_v2();
+//        if (farmingdale.getGeoResult() != null){
+//            int numAddressMatches = farmingdale.getGeoResult().getAddressMatches().size();
+//            System.out.printf("%d addresses matched\n", numAddressMatches);
+//
+//            List<AddressMatch> addressMatches = farmingdale.getGeoResult().getAddressMatches();
+//            for (AddressMatch m : addressMatches){
+//                System.out.printf("city: %s x-coord: %f y-coord: %f\n", m.getAddressComponents().getCity(), m.getCoordinates().getX(), m.getCoordinates().getY());
+//            }
+//            
+//        }
     }
 }

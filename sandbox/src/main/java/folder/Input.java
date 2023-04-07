@@ -1,5 +1,5 @@
 
-package csc325.sandbox;
+package folder;
 
 import javax.annotation.Generated;
 import com.google.gson.annotations.Expose;
@@ -10,11 +10,9 @@ public class Input {
 
     @SerializedName("address")
     @Expose
-   
     private Address address;
     @SerializedName("benchmark")
     @Expose
-    
     private Benchmark benchmark;
 
     public Address getAddress() {
